@@ -1,0 +1,256 @@
+body {
+    background-color: #112240;
+    margin: 0;
+    font-family: 'Passion One';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    /**
+    background-image: url(paris.svg);
+    background-size: auto 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: shake-horizontal 120s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+    **/
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+h1,p{
+    margin: 0;
+}
+#layer{
+    color: azure;
+    width: 100%;
+    min-height: 500px;
+    text-align: center;
+}
+.hOvuuP {
+    left: 20px;
+    right: auto;
+}
+.hOvuuP {
+    width: 40px;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+    color: #a8b2d1;
+}
+.dVLQAC {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.dVLQAC li a {
+    padding: 10px;
+}
+.dVLQAC li a svg {
+    width: 20px;
+    height: 20px;
+}
+.dVLQAC li a:hover, .dVLQAC li a:focus {
+    transform: translateY(-3px);
+}
+.dVLQAC li a {
+    padding: 10px;
+}
+.dVLQAC::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: #a8b2d1;
+}
+
+a:hover, a:focus {
+    color: lightskyblue;
+}
+svg.feather {
+    fill: none;
+}
+
+.jSIwrL {
+    left: auto;
+    right: 20px;
+}
+.jSIwrL {
+    width: 40px;
+    position: absolute;
+    bottom: 0px;
+    left: auto;
+    right: 40px;
+    z-index: 10;
+    color: #a8b2d1;
+}
+.jJFfEJ {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+.jJFfEJ a {
+    margin: 20px auto;
+    padding: 10px;
+    font-family: 'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+.jJFfEJ::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: #a8b2d1;
+}
+.jJFfEJ a:hover, .jJFfEJ a:focus {
+    transform: translateY(-3px);
+}
+
+/* animated button */
+#layer a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    /*color: lightskyblue;*/
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+#layer a:hover {
+    /*background: lightskyblue;*/
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px lightskyblue,
+              0 0 25px lightskyblue,
+              0 0 50px lightskyblue,
+              0 0 100px lightskyblue;
+}
+
+#layer a span {
+    position: absolute;
+    display: block;
+}
+
+#layer a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, lightskyblue);
+    animation: btn-anim1 2s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+  50%,100% {
+        left: 100%;
+    }
+}
+
+#layer a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, lightskyblue);
+    animation: btn-anim2 2s linear infinite;
+    animation-delay: .5s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+  50%,100% {
+        top: 100%;
+    }
+}
+
+#layer a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, lightskyblue);
+    animation: btn-anim3 2s linear infinite;
+    animation-delay: 1s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+  50%,100% {
+        right: 100%;
+    }
+}
+
+#layer a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, lightskyblue);
+    animation: btn-anim4 2s linear infinite;
+    animation-delay: 1.5s
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+  50%,100% {
+        bottom: 100%;
+    }
+}
+
+/**
+@keyframes shake-horizontal {
+    0%,
+    100% {
+        background-position-x: center;
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+        background-position-x: 30%;
+    }
+    20%,
+    40%,
+    60% {
+        background-position-x: 60%;
+    }
+    80% {
+        background-position-x: 50%;
+    }
+    90% {
+        background-position-x: 40%;
+    }
+}**/

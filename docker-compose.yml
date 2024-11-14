@@ -1,0 +1,6 @@
+services:
+  haroun.dev:
+    container_name: haroun.dev
+    restart: unless-stopped
+    image: haroun.dev
+    build: .
