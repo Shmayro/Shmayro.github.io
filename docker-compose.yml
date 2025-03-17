@@ -6,3 +6,7 @@ services:
     ports:
       - 80:80
     build: .
+  bonita:
+    image: bonita:2024.3
+    ports:
+      - 8080:8080
