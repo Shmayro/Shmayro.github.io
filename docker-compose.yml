@@ -4,5 +4,5 @@ services:
     restart: unless-stopped
     image: haroun.dev
     ports:
-      80:80
+      - 80:80
     build: .
