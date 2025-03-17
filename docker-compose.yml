@@ -3,4 +3,6 @@ services:
     container_name: haroun.dev
     restart: unless-stopped
     image: haroun.dev
+    ports:
+      80:80
     build: .
